@@ -78,10 +78,11 @@ body{
     padding-right: 30px;
 }
 
-#post{
+#posts{
     width: 60%;
     float: left;
     font-family: var(--font-post);
+    margin-bottom: 10px;
 }
 
 .post{
@@ -89,8 +90,11 @@ body{
 }
 
 .post h3{
+    margin-top: 35px;
+    margin-bottom: 5px;
     font-size: 35px;
     color: var(--color-font-title);
+    float: none;
 }
 
 .post span{
@@ -101,9 +105,9 @@ body{
 
 .post p{
     margin-top: 20px;
-    margin-bottom: 10px;
-    line-height: 25px;
-    text-align: justify;
+    margin-bottom: 15px;
+    line-height: 20px;
+    text-align: left;
 }
 
 .button-more{
