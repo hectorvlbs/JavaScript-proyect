@@ -49,4 +49,43 @@ window.addEventListener("load", () => {
         return console.log(String);
     }
 
+    $(document).ready(function(){
+        $('.slider').bxSlider();
+      });
+
+    $(function() {
+        $('.bxslider').bxSlider({
+            mode: 'fade',
+            captions: 'true',
+            slideWidth: 1200,
+            pager: false
+        }); 
+    });  
+
+    $("#theme-changed").hide();
+    var theme = $("#theme");
+    $("#to_pink").click(function (e) { 
+        theme.attr("href", "Css/Index_pink.css");
+
+        $("#theme-changed").slideDown().delay(3000).queue(function (next) {
+            $(this).slideUp();
+            next();
+        });
+    });
+
+    $("#to_black").click(function (e) { 
+        theme.attr("href", " "); 
+        $("#theme-changed").slideDown().delay(3000).queue(function (next) {
+            $(this).slideUp();
+            next();
+        });
+    });
+
+    $("#Up").click(function (e) { 
+        console.log("Hola");
+        $('html, body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+
 });
