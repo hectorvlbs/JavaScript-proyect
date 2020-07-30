@@ -1,0 +1,54 @@
+:root{
+    --change-theme: rgba(31,10,55,0.5);
+    --bg-toblack: rgb(34, 34, 34);
+    --bg-topink: rgb(246,227,233);
+    --tchg-color: rgb(225, 217, 217);
+    --tchg-bg: rgba(34,34,34,0.5)
+}
+
+
+#change_theme{
+    position: fixed;
+    top: 40%;
+    background: var(--change-theme);
+    width: 50px;
+    height: 80px;
+}
+
+#to_black{
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: var(--bg-toblack);
+}
+
+#to_pink{
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: var(--bg-topink);
+}
+
+#theme-changed{
+    position: fixed;
+    top: 10%;
+    width: 110px;
+    height: 60px;
+    color: var(--tchg-color);
+    margin-left: 50px;
+    background: var(--tchg-bg);
+}
+
+#theme-changed p {
+    margin-top: 14px;
+    text-align: center;
+    text-size-adjust: inherit;
+} 

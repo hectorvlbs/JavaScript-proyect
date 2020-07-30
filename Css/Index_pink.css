@@ -1,0 +1,194 @@
+:root{
+    --logo-background: rgb(34, 34, 34);
+    --logo-color: rgb(225, 217, 217);
+    --font: 'Times New Roman', Times, serif;
+    --menu-background: rgb(112,33,65);
+    --font-post: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --color-font-title: rgb(34, 34, 34);
+
+    --global-background: rgb(246,227,233) ;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url(../img/background.jpg);
+    background-attachment: scroll;
+}
+
+#global{
+    width: 65%;
+    margin: 0px auto;
+    margin-top: 30px;
+    background: var(--global-background);
+    padding: 20px;
+}
+
+#logo{
+    font-size: 40px;
+    font-family: var(--font);
+    text-align: center;
+    background: var(--logo-background);
+    color: var(--logo-color);
+    width: 50%;
+    height: 60px;
+    float: left;
+    margin-bottom: 20px;
+    line-height: 60px;
+}
+
+.bx-wraper, .bx-viewport{
+    height: 300px !important;  
+}
+
+.clear-fix{
+    float: none;
+    clear: both;
+}
+
+#menu{
+    font-family: var(--font);
+    background: var(--menu-background);
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#menu ul{
+    line-height: 46px;
+    list-style: none;
+}
+
+#menu ul li{
+    height: 46px;
+    display: inline-block;
+    transition: all 300ms;
+}
+
+#menu ul li:hover{
+    background: var(--logo-background);
+}
+
+#menu a{
+    display: block;
+    color: var(--logo-color);
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#posts{
+    width: 60%;
+    float: left;
+    font-family: var(--font-post);
+    margin-bottom: 10px;
+}
+
+.post{
+    padding: 20px;
+}
+
+.post h3{
+    margin-top: 35px;
+    margin-bottom: 5px;
+    font-size: 35px;
+    color: var(--color-font-title);
+    float: none;
+}
+
+.post span{
+    display: block;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.post p{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.button-more{
+    display: block;
+    padding: 15px;
+    background: var(--menu-background);
+    color: var(--logo-color);
+    margin-top: 10px;
+    text-decoration: none;
+    width: 60px;
+    height: 20px;
+    float: right;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-more:hover{
+    background: var(--logo-background);
+}
+
+#aside{
+    font-family: var(--font-post);
+    width: 30%;
+    float: right;
+    margin-top: 10px;
+}
+
+#aside h4{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 40px;
+    background: var(--menu-background);
+    width: 95%;
+    height: 50px;
+    margin-right: 50px;
+}
+
+#aside h4 span{
+    color: var(--logo-color);
+}
+
+#aside img{
+    width: 58%;
+    margin-left: 67px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"]{
+    padding: 5px;
+    border-radius: 2px;
+    border-color: var(--menu-background);
+    border: 1px solid #ccc;
+    width: 90%;
+    margin-bottom: 12px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 10px var(--logo-background);
+}
+
+form input[type="submit"]{
+    background: var(--menu-background);
+    padding: 10px;
+    color: var(--logo-color);
+    border: 3px dashed var(--logo-background);
+}
+
+footer{
+    font-family: var(--font-post);
+    color: var(--logo-color);
+    background: var(--menu-background);
+    height: 100%;
+    margin: 0px auto;
+    width: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    margin-top: 10px;
+    opacity: 0.8;
+    line-height: 45px;
+    margin-bottom: 10px;
+}
