@@ -6,7 +6,12 @@ window.addEventListener("load", () => {
     Slider();
     WebsiteThemeChanger();
     SrcollUp();
-     
+    HideAbout();
+
+    FakeLogin();
+    //IndentifyUser();
+    FakeLogout();
+    
     /**
      *  functionS
      */
@@ -129,6 +134,54 @@ window.addEventListener("load", () => {
                 scrollTop: 0
             }, 700);
         });    
+    }
+
+    function HideAbout() {
+        $("#about").hide();
+    }
+
+    function FakeLogin() {
+        $("#login form").submit(function (e) { 
+            e.preventDefault();
+            var FormName = $("#name").val();
+            localStorage.setItem("name", FormName);
+            console.log("FakeLogin: " + FormName);
+            HideLogin();
+            IndentifyUser();
+        });
+    }
+
+    function HideLogin(){
+        $("#login").hide();
+        $("#about").show();
+    }
+
+    function IndentifyUser() {
+        var Username = localStorage.getItem("name");
+        cl("IndentifyUser: " + Username);
+        $("#login").hide();
+        ShowUsername(Username);
+    }
+
+    function ShowUsername(Username) {
+        var content = '<h4 id ="h4-username" ><span>Bienvenid@, ' + Username + '.</span></h4>';
+        $("#user-name").append(content);
+        $("#about").show();
+    }
+
+    function FakeLogout() {
+        $("#output").click(function (e) { 
+            e.preventDefault();
+            localStorage.setItem("name", null);
+            cl("FakeLogout: " + localStorage.getItem("name"));
+            $("#login").show();
+            $("#about").hide();
+            $("#h4-username").remove();
+        });
+    }
+
+    function cl(String) {
+        return console.log(String);
     }
 
 });

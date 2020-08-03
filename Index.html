@@ -16,11 +16,14 @@
     <link id="theme" rel="stylesheet" href="">
     <link rel="stylesheet" href="Css/themes.css">
     <link rel="stylesheet" href="Css/Up.css">
+    <link rel="stylesheet" href="Css/Aside.css">
 
 </head>
 
 <body>
 
+    
+    
     <div id="change_theme">
         <div id="to_black"></div>
         <div id="to_pink"></div>
@@ -62,33 +65,56 @@
         <section id="content">
 
             <aside id="aside">
+
                 <div id="about">
-                    <h4><span>¿Quién soy?</span></h4>
-                    <img src="img/cat.png" alt="">
+
+                    <div id="user">
+                        <div id="user-name">
+
+                        </div>
+                    </div>
+                
+                    <div id="logout">
+                        <input value="Cerrar sesión" id="output">
+                    </div>
+
                 </div>
+
                 <div class="clear-fix"></div>
+
+                <div id="separator"></div>
+
                 <div id="login">
+
                     <h4><span>Identificate</span></h4>
+
                     <form id="form">
+
                         <label for="name">
                             Nombre
                         </label>
-                        <input type="text" name="name">
+                        <input type="text" name="name" id="name">
 
                         <label for="email">
                             Email
                         </label>
-                        <input type="email" name="email">
+                        <input type="email" name="email" id="email">
 
                         <label for="password">
                             Contraseña
                         </label>
-                        <input type="password" name="password">
-                        <input type="submit" value="Entrar">
+                        <input type="password" name="password" id="password">
+
+                        <input type="submit" value="Entrar" id="input">
+
                     </form>
+
                     <div class="clear-fix"></div>
+
                 </div>
+
                 <div class="clear-fix"></div>
+
             </aside>
 
             <div id="posts">

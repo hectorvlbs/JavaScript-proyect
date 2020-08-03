@@ -130,53 +130,6 @@ body{
     background: var(--logo-background);
 }
 
-#aside{
-    font-family: var(--font-post);
-    width: 30%;
-    float: right;
-    margin-top: 10px;
-}
-
-#aside h4{
-    margin-top: 20px;
-    margin-bottom: 15px;
-    text-align: center;
-    line-height: 40px;
-    background: var(--menu-background);
-    width: 95%;
-    height: 50px;
-    margin-right: 50px;
-}
-
-#aside h4 span{
-    color: var(--logo-color);
-}
-
-#aside img{
-    width: 58%;
-    margin-left: 67px;
-}
-
-form input[type="text"],
-form input[type="password"],
-form input[type="email"]{
-    padding: 5px;
-    border-radius: 2px;
-    border-color: var(--menu-background);
-    border: 1px solid #ccc;
-    width: 90%;
-    margin-bottom: 12px;
-    margin-top: 10px;
-    box-shadow: 1px 1px 10px var(--logo-background);
-}
-
-form input[type="submit"]{
-    background: var(--menu-background);
-    padding: 10px;
-    color: var(--logo-color);
-    border: 3px dashed var(--logo-background);
-}
-
 footer{
     font-family: var(--font-post);
     color: var(--logo-color);
