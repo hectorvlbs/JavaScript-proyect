@@ -7,6 +7,7 @@
     <title>Proyecto con javascript</title>
     
     <script src="Js/Main.js"></script>
+    <script src="Js/Contact.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
@@ -17,13 +18,12 @@
     <link rel="stylesheet" href="Css/themes.css">
     <link rel="stylesheet" href="Css/Up.css">
     <link rel="stylesheet" href="Css/Aside.css">
+    <link rel="stylesheet" href="Css/Contact.css">
 
 </head>
 
 <body>
 
-    
-    
     <div id="change_theme">
         <div id="to_black"></div>
         <div id="to_pink"></div>
@@ -45,21 +45,13 @@
 
             <nav id="menu">
                 <ul>
-                    <li><a href="">Inicio</a></li>
+                    <li><a href="Index.html">Inicio</a></li>
                     <li><a href="AboutMe.html">Sobre mi</a></li>
-                    <li><a href="Contact.html">Contacto</a></li>
+                    <li><a href="">Contacto</a></li>
 
                 </ul>
             </nav>
         </header>
-
-        <div id="slider">
-            <div class="bxslider">
-                <div><img src="img/1.jpg"></div>
-                <div><img src="img/2.jpg"></div>
-                <div><img src="img/3.jpg"></div>
-            </div>
-        </div>
 
         <section id="content">
 
@@ -116,13 +108,25 @@
 
             </aside>
 
-            <div id="posts">
-                
-            </div>
+            <div id="box">
+                <!-- Contact Form-->
+                <h2>Contacto</h2>
+                <form id="contact">
+                    <label for="">Nombre</label>
+                    <input type="text" name="Name" required="true">
+    
+                    <label for="">Apellido's</label>
+                    <input type="text" name="Lastname" required="true">
+    
+                    <label for="">Correo electrónico</label>
+                    <input type="email" name="Email" class="required email" required="true"> 
+
+                    <input type="submit" name="Registrar">   
+                </form>
+    
+            </div>  
 
         </section>
-
-        <div class="clear-fix"></div>
 
     </section>
 

@@ -1,0 +1,39 @@
+#global{
+    height: 650px;
+}
+
+#box{
+    width: 100px;
+
+}
+
+#box h2{
+    margin-top: 60px;
+    margin-left: 200%;
+    margin-bottom: 30px;
+}
+
+#box label{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#box input{
+    margin-bottom: 15px;
+    width: 400px;
+}
+
+#contact{
+    margin-left: 50%;
+    text-align: left;
+}
+
+#register{
+    margin-top: 30px;
+    margin-left: 4px;
+}
+
+#register:hover{
+   background: rgb(54,21,62); 
+}

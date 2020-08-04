@@ -2,12 +2,14 @@ window.addEventListener("load", () => {
     /**
      *  Call the local functions.  
     */ 
-    FillPosts();
-    Slider();
+   if (window.location.href.indexOf('Index') > -1) {
+       FillPosts();
+       Slider();
+   }
+    
     WebsiteThemeChanger();
     SrcollUp();
     HideAbout();
-
     FakeLogin();
     //IndentifyUser();
     FakeLogout();
